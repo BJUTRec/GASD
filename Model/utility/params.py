@@ -5,7 +5,7 @@ def parse_args():
     #数据读取
     parser.add_argument('--data_path', nargs='?', default='../Data/',
                         help='Input data path.')
-    parser.add_argument('--dataset', nargs='?', default='ml-10m',
+    parser.add_argument('--dataset', nargs='?', default='ml1m',
                         help='Choose a dataset from {gowalla, yelp2018, amazon-book}')
     parser.add_argument('--proj_path', nargs='?', default='',
                         help='Project path.')
@@ -22,7 +22,7 @@ def parse_args():
                         help='Number of epochs')
     parser.add_argument('--batch_size', type=int, default=1024,
                         help='Batch size.')
-    parser.add_argument('--lr', type=float, default=0.01,
+    parser.add_argument('--lr', type=float, default=0.001,
                         help='Learning rate.')
     parser.add_argument('--regs', nargs='?', default='[1e-4,1e-4,1e-4]',
                         help='Regularizations.')
@@ -39,12 +39,10 @@ def parse_args():
     parser.add_argument('--n_layers', type=int, default=3,
                         help='Layer numbers.')
 
-    parser.add_argument('--ssl_ratio', type=float, default=0.1,
-                        help='ssl_ratio.')
-    parser.add_argument('--ssl_temp', type=float, default=1.5,
-                        help='ssl_temp.')
-    parser.add_argument('--ssl_reg', type=float, default=0.05,
-                        help='ssl_temp.')
+    parser.add_argument('--skd_temp', type=float, default=1.5,
+                        help='skd_temp.')
+    parser.add_argument('--skd_reg', type=float, default=0.1,
+                        help='skd_temp.')
 
     #测试阶段
     parser.add_argument('--show_step', type=int, default=3,
