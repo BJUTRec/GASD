@@ -7,7 +7,7 @@ DOI: https://doi.org/10.1145/3729223
 Python==3.6.0
 Tensorflow-gpu==1.14.0
 
-# Dataset 
+# Datasets 
 We provide datasets: MovieLens-1M, Movielens-10M, and Last-fm in file ./Data. 
 
 # Citation
