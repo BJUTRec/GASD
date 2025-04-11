@@ -72,18 +72,6 @@ def ndcg_at_k(r, k, ground_truth, method=1):
         return 0.
     return dcg_at_k(r, k, method) / dcg_max
 
-#def ndcg_at_k(r, k, method=1):
-    #"""Score is normalized discounted cumulative gain (ndcg)
-    #Relevance is positive real values.  Can use binary
-    #as the previous methods.
-    #Returns:
-        #Normalized discounted cumulative gain
-    #"""
-    #dcg_max = dcg_at_k(sorted(r, reverse=True), k, method)
-    #if not dcg_max:
-        #return 0.
-    #return dcg_at_k(r, k, method) / dcg_max
-
 def recall_at_k(r, k, all_pos_num):
     r = np.asfarray(r)[:k]
     return np.sum(r) / all_pos_num
