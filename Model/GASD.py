@@ -179,7 +179,7 @@ class GASD(object):
 
 ########################################################################################################################    Math
     def model_save(self, ses):
-        save_pretrain_path = '../output_parameters/ml1m'
+        save_pretrain_path = '../output_parameters/ml1m_emb.npz'
         np.savez(save_pretrain_path, user_embed=np.array(self.weights['user_embedding'].eval(session=ses)),
                  item_embed=np.array(self.weights['item_embedding'].eval(session=ses)))
 
