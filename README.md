@@ -14,18 +14,13 @@ We provide datasets: MovieLens-1M, Movielens-10M, and Last-fm in file ./Data.
 # Citation
 If you find this work helpful to your research, please kindly consider citing our paper.
 
+"""
 @article{10.1145/3729223,
-
 author = {Jian, Meng and Wang, Tuo and Xia, Zhuoyang and Shi, Ge and Hong, Richang and Wu, Lifang},
-
 title = {Geometric-Augmented Self-Distillation for Graph-Based Recommendation},
-
 year = {2025},
-
 volume = {43},
-
 number = {4},
-
 journal = {ACM Trans. Inf. Syst.},
-
 }
+"""
